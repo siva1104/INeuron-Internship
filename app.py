@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-sales_model = pickle.load(open('C:/Users/R SIVAKUMAR/Downloads/store sales prediction/model.pkl','rb'))
+sales_model = pickle.load(open('model.pkl','rb'))
 
 def main():
     st.title('Store Sales Prediction')
