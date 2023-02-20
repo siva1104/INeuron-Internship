@@ -1,4 +1,4 @@
 numpy
-flask
+streamlit
 pandas
 scikit-learn
