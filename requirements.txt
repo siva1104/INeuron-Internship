@@ -1,4 +1,5 @@
-numpy
-flask
+Flask
+sklearn
 pandas
-scikit-learn
+numpy
+matplotlib
