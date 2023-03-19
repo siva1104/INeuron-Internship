@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Store Sales Prediction</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 750px;
+        text-align: right;
+        vertical-align: middle;
+        margin-bottom: 10px;
+      }
+      .center {
+        text-align: center;
+        padding-bottom: 20px; 
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">STORE SALES PREDICTION</h1>
+    <form action="predict" method="POST">
+      <label for="item_fat">Item Fat:</label>
+      <select id="item_fat" name="item_fat">
+        <option value="Low Fat">Low Fat</option>
+        <option value="Regular">Regular</option>
+      </select>
+      <br>
+      <label for="item">Item:</label>
+      <select id="item" name="item">
+        <option value="Food">Food</option>
+        <option value="Non-Consumable">Non-Consumable</option>
+        <option value="Drinks">Drinks</option>
+      </select>
+      <br>
+      <label for="outlet_loc_type">Outlet Location Type:</label>
+      <select id="outlet_loc_type" name="outlet_loc_type">
+        <option value="Tier 1">Tier 1</option>
+        <option value="Tier 2">Tier 2</option>
+        <option value="Tier 3">Tier 3</option>
+      </select>
+      <br>
+      <label for="outlet_size">Outlet Size:</label>
+      <select id="outlet_size" name="outlet_size">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <br>
+      <label for="outlet_type">Outlet Type:</label>
+      <select id="outlet_type" name="outlet_type">
+        <option value="Supermarket Type1">Supermarket Type1</option>
+        <option value="Supermarket Type2">Supermarket Type2</option>
+        <option value="Supermarket Type3">Supermarket Type3</option>
+        <option value="Grocery Store">Grocery Store</option>
+      </select>
+      <br>
+      <label for="year">Year Established:</label>
+      <select id="year" name="year">
+        <option value="37">37</option>
+        <option value="35">35</option>
+        <option value="25">25</option>
+        <option value="24">24</option>
+        <option value="23">23</option>
+        <option value="20">20</option>
+        <option value="18">18</option>
+        <option value="15">15</option>
+        <option value="13">13</option>
+      </select>
+      <br>
+      <div class="center">
+        <input type="submit" value="Predict Sales">
+      </div>
+    </form>
+  </body>
+</html>
